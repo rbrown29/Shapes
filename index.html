@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script type="text/JavaScript" src="index.js"></script>
+    <script type="text/JavaScript" src="Scene.js"></script>
+    <script type="text/JavaScript" src="Shape.js"></script>
+    <script type="text/JavaScript" src="RectangleShape.js"></script>
+    <script type="text/JavaScript" src="CircleShape.js"></script>
+    <script type="text/JavaScript" src="TriangleShape.js"></script>
+    <script type="text/JavaScript" src="SquareShape.js"></script>
+    <script type="text/JavaScript" src="Shape.ShapeType.js"></script>
+    <script type="text/JavaScript" src="Picture.js"></script>
+    <script>
+        var view = new View();
+        view.createScene(picture);
+        window.addEventListener("resize", function () { view.resize(); }, false);
+    </script>
+</head>
+
+<body style="margin: 0; overflow: hidden;" onload="view.resize()">
+    <canvas id="canvas" width="600" height="400"></canvas>
+
+</body>
+
+</html>
